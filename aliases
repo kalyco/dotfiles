@@ -1,0 +1,27 @@
+# Unix
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias e="$EDITOR"
+alias v="$VISUAL"
+alias gad=“git add --all .”
+alias gcm="git commit -m"
+alias s=“git status”
+alias aliases=“vim ~/.aliases.local”
+alias fe=~/documents/foundation-ember
+alias fr=~/documents/foundation-rails
+alias d=~/kalyco/documents
+alias feat=git flow feature start
+
+# Bundler
+alias b="bundle"
+
+# Rails
+alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias s="rspec"
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
